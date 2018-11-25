@@ -1,43 +1,27 @@
 <!DOCTYPE html>
-<!-- This page is displayed when someone navigates to a verify email or reset password link
-   but their security token is wrong. This can either mean the user has clicked on a
-   stale link (i.e. re-click on a password reset link after resetting their password) or
-   (rarely) this could be a sign of a malicious user trying to tamper with your app.
+<!-- This page is displayed whenever someone has successfully reset their password.
+   Pro and Enterprise accounts may edit this page and tell Parse to use that custom
+   version in their Parse app. See the App Settigns page for more information.
+   This page will be called with the query param 'username'
 -->
 <html>
-  <head>
-  <title>Invalid Link</title>
-  <style type='text/css'>
-    .container {
-      border-width: 0px;
-      display: block;
-      font: inherit;
-      font-family: 'Helvetica Neue', Helvetica;
-      font-size: 16px;
-      height: 30px;
-      line-height: 16px;
-      margin: 45px 0px 0px 45px;
-      padding: 0px 8px 0px 8px;
-      position: relative;
-      vertical-align: baseline;
-    }
 
-    h1, h2, h3, h4, h5 {
-      color: #0067AB;
-      display: block;
-      font: inherit;
-      font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
-      font-size: 30px;
-      font-weight: 600;
-      height: 30px;
-      line-height: 30px;
-      margin: 0 0 15px 0;
-      padding: 0 0 0 0;
-    }
-  </style>
-  <body>
-    <div class="container">
-      <h1>Invalid Link</h1>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Emailbestätigung</title>
+  <link rel="stylesheet" href="../css/subwork.css">
+ 
+</head>
+
+<body>
+   <div class="container">
+    <img src="https://pg-app-gu5juh8e7ihd177i0uys1vdsf0fyvx.scalabl.cloud/images/subwork_logo_wordmark_claim_300ppi.png"
+      width="300px" alt="Subwork Logo" style="margin: 45px ">
+    <div class="flex-container">
+      <h1>Emailadresse wurde erfolgreich bestätigt</h1>
+      <p>&#127881;</p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
